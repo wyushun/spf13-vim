@@ -21,7 +21,7 @@ app_name='spf13-vim'
 [ -z "$REPO_BRANCH" ] && REPO_BRANCH='3.0'
 debug_mode='0'
 fork_maintainer='0'
-[ -z "$VUNDLE_URI" ] && VUNDLE_URI="https://github.com/VundleVim/vundle.git"
+[ -z "$VUNDLE_URI" ] && VUNDLE_URI="https://github.com/ricann/Vundle.vim"
 
 ############################  BASIC SETUP TOOLS
 msg() {
