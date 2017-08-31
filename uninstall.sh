@@ -12,7 +12,10 @@ die() {
 }
 
 rm $HOME/.vimrc
+rm $HOME/.vimrc.local
 rm $HOME/.vimrc.bundles
-rm $HOME/.vim
+rm $HOME/.vimrc.bundles.local
+rm $HOME/.vimrc.before.local
+rm -rf $HOME/.vim
 
 rm -rf $app_dir
