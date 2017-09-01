@@ -1,1 +1,4 @@
 colorscheme nightsky
+
+" not confirm whether loading YCM when open VIM
+let g:ycm_confirm_extra_conf=0
