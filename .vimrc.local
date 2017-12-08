@@ -1,4 +1,5 @@
-colorscheme CandyPaper
+"colorscheme automation
+colorscheme nightsky
 let g:ycm_confirm_extra_conf=0
 
 "vim-commentary
@@ -6,3 +7,12 @@ let g:ycm_confirm_extra_conf=0
 autocmd FileType python,shell,coffee set commentstring=#\ %s
 "修改注释风格
 autocmd FileType java,c,cpp set commentstring=//\ %s
+
+" clang-format config
+"map <C-K> :pyf <path-to-this-file>/clang-format.py<cr>
+"imap <C-K> <c-o>:pyf <path-to-this-file>/clang-format.py<cr>
+"function! Formatonsave()
+"  let l:formatdiff = 1
+"  pyf ~/llvm/tools/clang/tools/clang-format/clang-format.py
+"endfunction
+"autocmd BufWritePre *.h,*.cc,*.cpp call Formatonsave()
