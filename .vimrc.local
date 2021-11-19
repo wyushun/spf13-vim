@@ -11,3 +11,15 @@ autocmd FileType python,shell,coffee set commentstring=#\ %s
 "修改注释风格
 autocmd FileType java,c,cpp set commentstring=//\ %s
 
+" clang-format config
+let g:clang_format#command = 'clang-format'
+nmap <F4> :ClangFormat<cr>
+autocmd FileType c ClangFormatAutoEnable
+let g:clang_format#detect_style_file = 1
+let g:clang_format#auto_format_on_insert_leave=0
+
+function! Formatonsave()
+  let l:formatdiff = 1
+    py3f ~/.clang-format.py
+endfunction
+autocmd BufWritePre *.h,*.hpp,*.cc,*.cpp call Formatonsave()
