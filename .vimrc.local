@@ -19,7 +19,7 @@ let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format_on_insert_leave=0
 
 function! Formatonsave()
-  let l:formatdiff = all
+  let l:formatdiff = 1
   py3f ~/.clang-format.py
 endfunction
 autocmd BufWritePre *.h,*.hpp,*.cc,*.cpp,*.cu call Formatonsave()
