@@ -17,11 +17,11 @@
 ############################  SETUP PARAMETERS
 app_name='spf13-vim'
 [ -z "$APP_PATH" ] && APP_PATH="$HOME/.spf13"
-[ -z "$REPO_URI" ] && REPO_URI='git@github.com:wyushun/spf13-vim.git'
+[ -z "$REPO_URI" ] && REPO_URI='https://github.com/wyushun/spf13-vim.git'
 [ -z "$REPO_BRANCH" ] && REPO_BRANCH='3.0'
 debug_mode='0'
 fork_maintainer='0'
-[ -z "$VUNDLE_URI" ] && VUNDLE_URI="git@github.com:wyushun/Vundle.vim.git"
+[ -z "$VUNDLE_URI" ] && VUNDLE_URI="https://github.com/wyushun/Vundle.vim.git"
 
 ############################  BASIC SETUP TOOLS
 msg() {
